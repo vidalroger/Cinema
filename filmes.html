@@ -4,87 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="cinema.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/153737/isolated/preview/f73c64a90025aa54b42e9b5bd4d1a0bd-icone-de-traco-colorido-do-monitor-html.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo1.css"
     <title>WebCinema</title>
 </head>
 <body>
     <header>
-        <img src="https://cdn-icons-png.flaticon.com/512/864/864818.png" width=80 heigth=60 alt="logo"/>
+        <img src="https://images.vexels.com/media/users/3/153737/isolated/preview/f73c64a90025aa54b42e9b5bd4d1a0bd-icone-de-traco-colorido-do-monitor-html.png" width=80 heigth=60 alt="logo"/>
         <h1>WebCinema</h1>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
-            <li><a href="./form.html">Filmes</a></li>
-            <li><a href="./promo.html">Promo</a></li>
-            <li>Admin
+            <li><a href="./index.html">Filmes</a></li>
+            <li><a href="./promo.html">Promoção</a></li>
+            <li><a href="#">Admin</a>
                 <ul>
-                    <li><a href="./filmes.html">Cadastrar Filmes</a></li>
+                    <li><a href="./filmes.html">Ajustes</a></li>
                 </ul>
             </li>
         </ul>
-    <nav>
-<header>
-    <h1>Cadastre seu Filme</h1>
-    <form>
-        <div>
-            <label name="Nome do Filme">Nome do Filme:</label>
-            <input type="text" >
-        </div>
-        <div>
-            <label name="Cartaz">Cartaz:</label>
-            <input type="file">
-        </div>
-        <div>
-            <label name="Sinopse">Sinopse:</label>
-            <br>
-            <textarea cols="33" rows="5"></textarea>
-        </div>
-        <button>Enviar</button>
-    </form>
-    <h1>Ficha Tecnica</h1>
-    <form>
-        <div>
-            <label name="Nome Original">Nome Original:</label>
-            <input type="text" >
-        </div>
-        <div>
-            <label name="Diretor">Diretor:</label>
-            <input type="text" >
-        </div>
-        <div>
-            <label name="Elenco">Elenco:</label>
-            <br>
-            <textarea cols="33" rows="5"></textarea>
-        </div>
-        <button>Enviar</button>
-    </form>
-    <h1>Ja Cadastrados</h1>
-    <table border="3">
-        <tr>
-            <th>Filme</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>Os Caras Malvados</td>
-            <td><a href="">Editar</a> <a href="">Apagar</a></td>
-        </tr>
-        <tr>
-            <td>Batman</td>
-            <td><a href="">Editar</a> <a href="">Apagar</a></td>
-        </tr>
-        <tr>
-            <td>Morbius</td>
-            <td><a href="">Editar</a> <a href="">Apagar</a></td>
-        </tr>
-        <tr>
-            <td>Animais Fantasticos: Os segredos de Dumbledore</td>
-            <td><a href="">Editar</a> <a href="">Apagar</a></td>
-        </tr>
-        <tr>
-            <td>Doutor Estranho no Multiverso da Loucuras</td>
-            <td><a href="">Editar</a> <a href="">Apagar</a></td>
-        </tr>
-    </table>
-
-
-</header>
+    </nav>
+    <article>
+        <h3>Cadastre seu Filme</h3>
+        <form>
+            <div>
+                <label name="Nome do Filme">Nome do Filme:</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label name="Cartaz">Cartaz:</label>
+                <input type="file">
+            </div>
+            <div>
+                <label name="Trailer">Trailer: </label>
+                <input type="url">
+            </div>
+            <div>
+                <label name="Sinopse">Sinopse:</label>
+                <br>
+                <textarea cols="33" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="classificação">Class.Ind:</label>
+                <label for="L">L</label>
+                <input type="radio" name="opção" id="op1">
+                <label for="10">10</label>
+                <input type="radio" name="opção" id="op1">
+                <label for="12">12</label>
+                <input type="radio" name="opção" id="op1">
+                <label for="14">14</label>
+                <input type="radio" name="opção" id="op1">
+                <label for="16">16</label>
+                <input type="radio" name="opção" id="op1">
+                <label for="18">18</label>
+                <input type="radio" name="opção" id="op1">                       
+            </div>
+            <div>
+                <label name="Tempo">Tempo de duração</label>
+                <input type="number"
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </article>  
+    <article>
+        <h3>Ficha Tecnica</h3>
+        <form>
+            <div>
+                <label name="Nome Original">Nome Original:</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label name="Diretor">Diretor:</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label name="Elenco">Elenco:</label>
+                <br>
+                <textarea cols="33" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </article>
+    <article>
+        <table>
+            <caption>Cadastrados</caption>
+            <tr>
+                <th>Filme</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Os Caras Malvados</td>
+                <td><a href="">Editar</a> <a href="">Apagar</a></td>
+            </tr>
+            <tr>
+                <td>Batman</td>
+                <td><a href="">Editar</a> <a href="">Apagar</a></td>
+            </tr>
+            <tr>
+                <td>Morbius</td>
+                <td><a href="">Editar</a> <a href="">Apagar</a></td>
+            </tr>
+            <tr>
+                <td>Animais Fantasticos: Os segredos de Dumbledore</td>
+                <td><a href="">Editar</a> <a href="">Apagar</a></td>
+            </tr>
+            <tr>
+                <td>Doutor Estranho no Multiverso da Loucuras</td>
+                <td><a href="">Editar</a> <a href="">Apagar</a></td>
+            </tr>
+        </table>
+    </article>
+<footer><i>© 2022 Vidal</i></footer>
+</body>

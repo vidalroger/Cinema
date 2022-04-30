@@ -4,64 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="cinema.ico" type="image/x-icon">
-    <title>WebCinema</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/153737/isolated/preview/f73c64a90025aa54b42e9b5bd4d1a0bd-icone-de-traco-colorido-do-monitor-html.png"" type="image/x-icon">
+    <link rel="stylesheet" href="estilo1.css"
+    <title>WebCinema - Ingresso</title>
 </head>
 <body>
     <header>
-        <img src="https://cdn-icons-png.flaticon.com/512/864/864818.png" width=80 heigth=60 alt="logo"/>
+        <img src="https://images.vexels.com/media/users/3/153737/isolated/preview/f73c64a90025aa54b42e9b5bd4d1a0bd-icone-de-traco-colorido-do-monitor-html.png" width=80 heigth=60 alt="logo"/>
         <h1>WebCinema</h1>
     </header>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="./index.html">Filmes</a></li>
-            <li><a href="./promo.html">Promo</a></li>
-            <li>Admin
+            <li><a href="./promo.html">Promoção</a></li>
+            <li><a href="#">Admin</a>
                 <ul>
-                    <li><a href="./filmes.html">Cadastrar Filmes</a></li>
+                    <li><a href="./filmes.html">Ajustes</a></li>
                 </ul>
             </li>
         </ul>
-    <nav>
-<header>
-        <h1>Login</h1>
+    </nav>
+    <article>
+        <h3>Login</h3>
             <form>
             <div>
                 <label name="Email">Email:</label>
-                <input type="text" >
+                <input type="email" >
             </div>
             <div>
                 <label name="Senha">Senha:</label>
-                <input type="text" >
+                <input type="password" >
             </div>
-            <div>        
-                <button>entrar</button>
+            <div>    
+                <input type ="submit" value="Entrar">
             </div>
             </form>
-        <h1>Comprar Ingresso</h1>
-        </header>
+    </article>
+    <article>
+        <h3>Comprar Ingresso</h3>
         <form>
             <div>
                 <label name="Filmes">Filmes:</label>
                 <select name="Filmes">
+                    <option value=""></option>
                     <option value="Caras Malvados">Caras Malvados</option>
                     <option value="Batman">Batman</option>
                 </select>
             </div>
             <div>
-                <label name="Data">Data</label>
+                <label name="Data">Data:</label>
                 <input type="date" >
             </div>
-            <label name="Promocao">Promocao:</label>
-            <select name="Promocao">
-                <option value="PROMOÇÃO ANIVERSARIANTES DO MÊS">PROMOÇÃO ANIVERSARIANTES DO MÊS</option>
-                <option value="PROMOÇÃO TERÇA TRIO">PROMOÇÃO TERÇA TRIO</option>
-                <option value="PROMOÇÃO TODOS PAGAM MEIA">PROMOÇÃO TODOS PAGAM MEIA</option>
-            </select>
+            <div>
+                <label name="Ingressos">N° Ingressos</label>
+                <input type="number">
+            </div>
+            <div>
+                <label name="Promocao">Promoção:</label>
+                <select name="Promocao">
+                    <option value=""></option>
+                    <option value="PROMOÇÃO ANIVERSARIANTES DO MÊS">PROMOÇÃO ANIVERSARIANTES DO MÊS</option>
+                    <option value="PROMOÇÃO TERÇA TRIO">PROMOÇÃO TERÇA TRIO</option>
+                    <option value="PROMOÇÃO TODOS PAGAM MEIA">PROMOÇÃO TODOS PAGAM MEIA</option>
+                </select>
+            </div>
             <div>        
-                <button>comprar</button>
+                <input type="reset">
+                <input type="submit" value="Comprar">
             </div>
         </form>
-</header>
+    </article>
+<footer><i>© 2022 Vidal</i></footer>
 </body>
 </html>

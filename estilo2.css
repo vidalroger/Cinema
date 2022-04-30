@@ -1,0 +1,134 @@
+/* Google Font 'Barlow' */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;    
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+}
+header {
+    place-items: right;
+    flex-direction: right;
+    display:flex;
+    font-size:20px;
+    margin: 15px;
+}
+.menu ul{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    width: 90px;
+    background: #ff5f555f;
+}
+.menu ul ul{
+    background: none;
+    list-style:none;
+}
+.menu li a{
+    display:block;
+    color: #cc3b3b;
+    padding: 8px 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu li a:hover{
+    background: #8e0600;
+    color: white;   
+}
+.menu li ul{
+    display: none;
+}
+.menu li:hover > ul{
+    display: block;
+}
+h2,h3,h4{
+    flex-direction: column;
+    place-items: center;
+    display: flex;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: #cc3b3b;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+form{
+    list-style: none;
+    background: #ff5f555f;
+    padding: 15px;
+    margin: 15px;  
+    border-radius: 15px;
+}
+th,td{
+     background: white;
+}
+table{
+    background: #ff5f555f;
+    padding: 15px ;
+    margin: 15px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+th,td{
+    border: 1px solid black;    
+}
+caption{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.box  div {
+    flex: 1 1 200px;
+    margin: 15px;
+}
+.box a{
+    color: #cc3b3b;
+    text-decoration: none;
+    background: #ff5f555f;
+    flex: 1 1 200px;    
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.efeito-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.efeito-grow:hover, .efeito-grow:focus, .efeito-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+article {
+    place-items: center;
+    flex-direction: column;
+    display:flex;
+    font-size:15px;
+}
+footer, p{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
